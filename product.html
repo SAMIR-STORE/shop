@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تفاصيل المنتج</title>
+  <link rel="stylesheet" href="B.css"/>
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <a href="index.html">🛍 SAMIR STORE </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">المنتجات</a>
+    </nav>
+  </header>
+
+  <main class="container product-page">
+    <div class="gallery">
+      <div class="gallery-main">
+        <img id="mainImage" src="" alt=""/>
+      </div>
+      <div id="thumbs" class="thumbs"></div>
+    </div>
+
+    <div class="details">
+      <h1 id="pName"></h1>
+      <p id="pDesc" class="lead"></p>
+      <div class="price-row">
+        <span id="pPrice" class="price"></span>
+        <span id="pBadge" class="badge">جميع طرق الدفع متوفرة   </span>
+      </div>
+      <div class="cta-row">
+        <a id="buyBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener">اشترِ الآن</a>
+        <a class="btn btn-outline" href="index.html">عودة للمتجر</a>
+      </div>
+      <ul id="pFeatures" class="features"></ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="A.js"></script>
+  <script>
+    // قراءة id من الرابط
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    const p = PRODUCTS.find(x => String(x.id) === String(id));
+
+    if (!p) {
+      document.body.innerHTML = `
+        <div class="container not-found">
+          <h2>المنتج غير موجود</h2>
+          <p>ربما تم نقله أو حذفه.</p>
+          <a class="btn btn-primary" href="index.html">العودة للمتجر</a>
+        </div>`;
+    } else {
+      document.title = p.name + " - تفاصيل المنتج";
+      // المعرض
+      const mainImage = document.getElementById('mainImage');
+      const thumbs = document.getElementById('thumbs');
+      mainImage.src = p.images[0];
+      mainImage.alt = p.name;
+
+      thumbs.innerHTML = p.images.map(src => `
+        <button class="thumb" aria-label="صورة">
+          <img src="${src}" alt="${p.name}"/>
+        </button>
+      `).join('');
+
+      thumbs.addEventListener('click', (e) => {
+        const img = e.target.closest('img');
+        if (img) mainImage.src = img.src;
+      });
+
+      // التفاصيل
+      document.getElementById('pName').textContent = p.name;
+      document.getElementById('pDesc').textContent = p.description;
+      document.getElementById('pPrice').textContent = p.price + '' + p.currency;
+      const featuresEl = document.getElementById('pFeatures');
+      featuresEl.innerHTML = (p.features || []).map(f => `<li>${f}</li>`).join('');
+
+      // زر الشراء (رابط مؤقت الآن)
+      const buyBtn = document.getElementById('buyBtn');
+      
+     if (p.price === 0) {
+       buyBtn.textContent = 'تحميل مجاني';
+       buyBtn.href = p.buyLink || '#'; // هنا تحط الرابط المباشر للتحميل أو للمجموعة المجانية
+       buyBtn.target = '_blank';
+       } else {
+       buyBtn.textContent = 'اشترِ الآن';
+       buyBtn.href = p.buyLink || '#';
+       buyBtn.target = '_blank';
+       buyBtn.addEventListener('click', (e) => {
+     if (!p.buyLink || p.buyLink === '#') {
+      e.preventDefault();
+      alert('زر الشراء جاهز — سنربطه بخطة الدفع لاحقًا.');
+       }
+      });
+    }
+      
+     
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> SAMIR STORE</title>
+  <link rel="stylesheet" href="B.css"/>
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <a href="index.html">🛍 SAMIR STORE </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">المنتجات</a>
+      <a href="#about">من نحن </a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>أفضل المنتجات الرقمية بأسعار مناسبة </h1>
+    <p>ملخصات، دورات، وأدوات برمجية — جاهزة للتحميل فورًا.</p>
+    <a class="btn btn-primary" href="#products">تصفح المنتجات</a>
+  </section>
+
+  <main id="products" class="container grid"></main>
+
+  <section id="about" class="container section">
+    <h2>من نحن</h2>
+    <p>متجر رقمي يقدم محتوى تعليمي وأدوات عملية بجودة عالية.</p>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2>تواصل معنا</h2>
+    <p>للاستفسار أو الدعم: yaasok873@gmail.com OR Wtsp +212645270025</p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="A.js"></script>
+  <script>
+    // توليد شبكة المنتجات من data في A.js
+    const productsGrid = document.getElementById('products');
+
+    function renderProducts() {
+      productsGrid.innerHTML = PRODUCTS.map(p => `
+        <article class="card">
+          <a class="image-wrap" href="product.html?id=${encodeURIComponent(p.id)}">
+            <img src="${p.images[0]}" alt="${p.name}"/>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="product.html?id=${encodeURIComponent(p.id)}">${p.name}</a>
+            </h3>
+            <p class="card-desc">${p.short}</p>
+            <div class="card-row">
+              <span class="price">${p.price} ${p.currency}</span>
+              <a class="btn btn-outline" href="product.html?id=${encodeURIComponent(p.id)}">تفاصيل</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
