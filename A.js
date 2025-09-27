@@ -27,8 +27,8 @@ const PRODUCTS = [
   {
     id: 'defPcX',
     name: 'Définitions de physique et de chimie',
-    short: 'x',
-    description: 'x', 
+    short: 'جميع  التعاريف التي ستحتاجها في الفزياء ولإكمياء بشكل مختصر جدا',
+    description: 'ستجد في هدا pdf جميع التعاريف التي ستحتاجها طيلة السنة الدراسية في مادة الفزياء', 
     price: 0,
     currency: 'MAD',
     images: [
@@ -38,16 +38,16 @@ const PRODUCTS = [
     
     ],
     features: [
-      'x',
-      'x'
+      'ملف pdf يتكون من 3 صفحات',
+      'جودة عالية وبشكل واضح'
     ],
     buyLink: 'definition Pc.pdf'
   },
    {
     id: 'exam english',
     name: 'examen english ',
-    short: 'from 2011 to 2023',
-    description: 'x', 
+    short: 'امتحانات وطنية في مادة اللغة لإنجليزية بدون تصحيح من سنة 2011 حتى 2023',
+    description: 'ستجد في هدا pdf جيمع لإمتحانات الوطنية الخاصة بشعبتي العلوم وحتى الشعبات التقنية ابتداءً من سنة 2011 حتى 2023', 
     price: 0,
     currency: 'MAD',
     images: [
@@ -59,8 +59,8 @@ const PRODUCTS = [
     
     ],
     features: [
-      'x',
-      'x'
+      'ملف pdf يتكون من 143 صفحات',
+      'جودة عالية وبشكل واضح'
     ],
     buyLink: 'examen english.pdf'
   },
@@ -112,8 +112,8 @@ const PRODUCTS = [
    {
     id: 'exam nationaux corr',
     name: 'les examans nationaux ++ Correction 💥',
-    short: 'كتاب من انتاج لأستادة سارا  ',
-    description: 'يحتوي على ملخص وتمارين  خاصة بالدورة لأولى لمادة لإنجليزية التانية باك جميع الشعب.',
+    short: ' هدا pdf يحتوي على جميع الوطنيات في مادة الرياضيات مع التصحيح من سنة 2011 حتى سنة 2024 ',
+    description: ' مع هدا pdf لن تحتاج  مرة تانية الى تنزيل اي تمارين او امتحانات في مادة الرياضيات ولن تضطر الى البحت عن الحلول.',
     price: 39,
     currency: 'MAD',
     images: [
@@ -133,10 +133,10 @@ const PRODUCTS = [
       'exam-mat-corr12.png',
     ],
     features: [
-      ':انظر الفهرس 🟡',
-      '62 صفحة PDF عالية الجودة',
+      'ملف pdf يتكون من 468 صفحة',
+      'جودة عالية وبشكل واضح',
       'ملف قابل للطباعة',
-      ':انظر الفهرس 🟡'
+      'هدا pdf سيساعدك كتيرا في الوطنيات لأنه يحتوي على حلول بشكل مبسط جدا'
       
       
     ],
@@ -147,8 +147,8 @@ const PRODUCTS = [
   {
     id: 'exam-math',
     name: 'Tous examens nationaux maths sans correction',
-    short: 'x',
-    description: 'x', 
+    short: 'يحتوي على جميع الوطنيات في مادة الرياضيات',
+    description: 'يحتوي هدا pdf على وطنيات في مادة الرياضيات باللغة الفرنسية', 
     price: 0,
     currency: 'MAD',
     images: [
@@ -161,7 +161,7 @@ const PRODUCTS = [
     features: [
       'كتاب PDF من 346 صفحة',
       'تصاميم عالية الجودة',
-      'فصول تفاعلية',
+      
       'ملفات عمل قابلة للتعديل'
     ],
     buyLink: 'tous examens nationaux maths sans correction.pdf'
@@ -197,9 +197,9 @@ const PRODUCTS = [
 
   {
     id: 'ss-js',
-    name: 'Résumé ATP et Muscle + Exercices Nationaux corrigés',
-    short: ' X .',
-    description: 'X.',
+    name: 'Résumé ATP et Muscle + <Exercices Nationaux corrigés>',
+    short: 'ملخص و متحانات وطنية مع التصحيح في درسين APT و muscl  .',
+    description: 'ملخص رائع وشامل لدرسي ATP و Muscl الخاصين بشعبتي pc و svt اضافة الى امتحانات جهوية خاصة بهذين المحورين فقط مع التصحيح.',
     price: 20,
     currency: 'MAD',
     images: [
@@ -212,18 +212,18 @@ const PRODUCTS = [
     ],
     features: [
       'كتاب PDF من 31 صفحة',
-      '  X',
-      'X',
-      ' X'
+      '  ملخصات بسيطة',
+      'تمارين وطنية خاصة بالدرس مع الحل',
+      ' تنظيم جيد وسهولة في لقراءة'
     ],
-    buyLink: '#'
+    buyLink: 'https://wa.me/message/LWXDVOQC5JETC1'
   },
   {
     id: 'ebook-ui-design',
     name: 'Résumé Math-examens-nationaux2025 -Prof-Fayssal.pdf',
-    short: 'x',
-    description: 'x', 
-    price: 49,
+    short: 'ملخص قصير وشامل لجميع دروس الرياضيات وفق لإيطار المرجعي لسنة 2025',
+    description: 'يحتوي هدا pdf على ملخص رائع لمادة الرياضيات الى امتحانات خاصة بكل دورة مع التصحيح', 
+    price: 29,
     currency: 'MAD',
     images: [
     'mat1.png',
@@ -235,7 +235,7 @@ const PRODUCTS = [
     features: [
       'كتاب PDF من 120 صفحة',
       'تصاميم عالية الجودة',
-      'فصول تفاعلية',
+      ' تنظيم اكتر من جيد ومريح للعين',
       'ملفات عمل قابلة للتعديل'
     ],
     buyLink: '#'
@@ -243,8 +243,8 @@ const PRODUCTS = [
   {
     id: 'maxi-svt',
     name: 'Maxi-svt 1st',
-    short: 'x',
-    description: 'x', 
+    short: 'هدا pdf تابع لسلاسل maxi',
+    description: 'يحتوي هدا pdf على مجزوءة واحدة خاصة بي svt الدورة لأولى', 
     price: 29,
     currency: 'MAD',
     images: [
@@ -258,15 +258,15 @@ const PRODUCTS = [
       'كتاب PDF من 332 صفحة',
       'تصاميم عالية الجودة',
       'فصول تفاعلية',
-      'ملفات عمل قابلة للتعديل'
+      'يعلمك ايضا طريقة التعامل مع لأسئلة وطريقة لإجابة عنها '
     ],
-    buyLink: '#'
+    buyLink: 'https://wa.me/message/LWXDVOQC5JETC1'
   },
    {
     id: 'course philo',
     name: 'المختصر في دروس الفلسفة ',
-    short: 'x',
-    description: 'x', 
+    short: 'ملخص بسيط جدا لجميع دروس الفلسفة',
+    description: 'يحتوي هدا pdf على جميع دروس الفلسفة بشكل مختصر اضافة الى منهجيات خاصة بي القولة والنص والسؤال', 
     price: 9,
     currency: 'MAD',
     images: [
@@ -276,8 +276,8 @@ const PRODUCTS = [
     
     ],
     features: [
-      'x',
-      'x'
+      'ملف pdf يتكون من 16 صفحة',
+      'تنظيم جيد وسهولة في لقراءة'
     ],
     buyLink: 'examen english.pdf'
   },
@@ -288,6 +288,7 @@ const PRODUCTS = [
 
 // يمكنك لاحقًا تبديل العملة والأسعار أو إضافة خصومات/رموز ترويجية هنا.
   
+
 
 
 // يمكنك لاحقًا تبديل العملة والأسعار أو إضافة خصومات/رموز ترويجية هنا.
