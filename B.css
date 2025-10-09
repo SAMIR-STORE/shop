@@ -60,7 +60,7 @@ body{
 
 .grid{
   display:grid; gap:18px;
-  grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px,1fr));   
   padding:20px 0 40px;
 }
 
@@ -155,4 +155,40 @@ body{
 
 @media (max-width: 900px){
   .product-page{grid-template-columns:1fr}
+}
+/* Styling for the new choice section */
+.choice-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.choice-card {
+  background: var(--card);
+  border: 1px solid #242c37;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  flex-basis: 300px; /* Set a base width for each card */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.choice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.45);
+}
+
+.choice-card h2 {
+  margin-top: 0;
+  color: var(--prim);
+}
+
+.choice-card p {
+  color: var(--muted);
+  line-height: 1.6;
 }

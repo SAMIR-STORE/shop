@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>المنتجات المجانية - SAMIR STORE</title>
+  <link rel="stylesheet" href="B.css"/>
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <a href="index.html">🛍 SAMIR STORE </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="paid-products.html">الكتب المدفوعة</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>المنتجات المجانية</h1>
+    <p>مجموعة منتقاة من الموارد التعليمية المتاحة للجميع.</p>
+  </section>
+
+  <main id="products" class="container grid"></main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="A.js?v=2"></script>
+  <script>
+    const productsGrid = document.getElementById('products');
+    // فلترة المنتجات لإظهار المجانية فقط
+    const freeProducts = PRODUCTS.filter(p => p.price === 0);
+
+    function renderProducts() {
+      productsGrid.innerHTML = freeProducts.map(p => `
+        <article class="card">
+          <a class="image-wrap" href="product.html?id=${encodeURIComponent(p.id)}">
+            <img src="${p.images[0]}" alt="${p.name}"/>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="product.html?id=${encodeURIComponent(p.id)}">${p.name}</a>
+            </h3>
+            <p class="card-desc">${p.short}</p>
+            <div class="card-row">
+              <span class="price">مجاني</span>
+              <a class="btn btn-outline" href="product.html?id=${encodeURIComponent(p.id)}">تفاصيل</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
