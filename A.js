@@ -5,7 +5,7 @@ const PRODUCTS = [
     name: 'Resume de course Physique en francais 2BAC  ',
     short: '📘 ملخص شامل في الفيزياء والكيمياء – السنة الثانية بكالوريا',
     description: 'ملخص شامل للفيزياء والكيمياء للسنة الثانية بكالوريا. يحتوي على ملخصات دقيقة ومنظمة لجميع الدروس، مع جداول تلخيصية ومخططات ذهنية لتسهيل المراجعة السريعة والتحضير للامتحانات..',
-    price: 49,
+    price: 29,
     currency: 'MAD',
     images: [
       'asl.png',
@@ -90,7 +90,7 @@ const PRODUCTS = [
     name: ' اللاصق في لمات ',
     short: 'كتاب اللاصق في المات من انتاج سعيد ابراغ يحتوي على جميع الدروس وفق لإيطار المرجعي لسنة 2025.',
     description: 'كتاب اللاصق في المات من انتاج سعيد ابراغ يحتوي على جميع الدروس وفق لإيطار المرجعي لسنة 2025, يحتوي هدا pdf على 550 صفحة مع شرح لدروس الرياضيات بالتفاصيل مع تمارين مصححة وكذلك امتحانات خاصة بكل فرض مع التصحيح وأيضا امتحانات وطنية مع التصحيح وكذلك نمادج متوقعة من انتاج لأستاد ابراغ.',
-    price: 50,
+    price: 29,
     currency: 'MAD',
     images: [
       'debut.png',
@@ -114,7 +114,7 @@ const PRODUCTS = [
     name: 'les examans nationaux ++ Correction 💥',
     short: ' هدا pdf يحتوي على جميع الوطنيات في مادة الرياضيات مع التصحيح من سنة 2011 حتى سنة 2024 ',
     description: ' مع هدا pdf لن تحتاج  مرة تانية الى تنزيل اي تمارين او امتحانات في مادة الرياضيات ولن تضطر الى البحت عن الحلول.',
-    price: 39,
+    price: 0,
     currency: 'MAD',
     images: [
       'exam-mat-corr0.png',
@@ -172,7 +172,7 @@ const PRODUCTS = [
     name: '1st semester English-1-prof: Sara English',
     short: 'كتاب من انتاج لأستادة سارا  ',
     description: 'يحتوي على ملخص وتمارين  خاصة بالدورة لأولى لمادة لإنجليزية التانية باك جميع الشعب.',
-    price: 19,
+    price: 0,
     currency: 'MAD',
     images: [
       'en1.png',
@@ -200,7 +200,7 @@ const PRODUCTS = [
     name: 'Résumé ATP et Muscle + <Exercices Nationaux corrigés>',
     short: 'ملخص و متحانات وطنية مع التصحيح في درسين APT و muscl  .',
     description: 'ملخص رائع وشامل لدرسي ATP و Muscl الخاصين بشعبتي pc و svt اضافة الى امتحانات جهوية خاصة بهذين المحورين فقط مع التصحيح.',
-    price: 20,
+    price: 0,
     currency: 'MAD',
     images: [
       'atp et muscl 0.png',
@@ -223,7 +223,7 @@ const PRODUCTS = [
     name: 'Résumé Math-examens-nationaux2025 -Prof-Fayssal.pdf',
     short: 'ملخص قصير وشامل لجميع دروس الرياضيات وفق لإيطار المرجعي لسنة 2025',
     description: 'يحتوي هدا pdf على ملخص رائع لمادة الرياضيات الى امتحانات خاصة بكل دورة مع التصحيح', 
-    price: 29,
+    price: 0,
     currency: 'MAD',
     images: [
     'mat1.png',
@@ -245,7 +245,7 @@ const PRODUCTS = [
     name: 'Maxi-svt 1st',
     short: 'هدا pdf تابع لسلاسل maxi',
     description: 'يحتوي هدا pdf على مجزوءة واحدة خاصة بي svt الدورة لأولى', 
-    price: 29,
+    price: 0,
     currency: 'MAD',
     images: [
     'maxi-svt0.png', 
@@ -306,4 +306,5 @@ const PRODUCTS = [
 ]
 // يمكنك لاحقًا تبديل العملة والأسعار أو إضافة خصومات/رموز 
  
+
 
